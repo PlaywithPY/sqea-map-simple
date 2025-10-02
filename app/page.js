@@ -1,6 +1,13 @@
+'use client'
+import { useEffect } from 'react'
 import './globals.css'
+import { initMap } from './mapLogic'
 
 export default function Home() {
+  useEffect(() => {
+    initMap()
+  }, [])
+
   return (
     <div className="container">
       <h1>🗺️ Carte des Terres Inconnues</h1>
