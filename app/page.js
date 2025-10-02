@@ -25,7 +25,7 @@ export default function Home() {
 
   const loadMapData = async () => {
     try {
-      const response = await fetch(`${BACKEND_URL}/api/map/state`);
+      const response = await fetch('/api/map/state');
       
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       
