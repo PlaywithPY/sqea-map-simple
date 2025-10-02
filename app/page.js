@@ -23,9 +23,10 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
-  const loadMapData = async () => {
-    try {
-      const response = await fetch('/api/map/state');
+const loadMapData = async () => {
+  try {
+    console.log("🔄 Chargement des données via proxy...");
+    const response = await fetch('/api/map/state'); // URL relative vers le proxy
       
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       
