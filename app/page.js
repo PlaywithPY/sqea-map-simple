@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import './globals.css'
 
-const BACKEND_URL = 'https://sqea-backend.onrender.com';
+const BACKEND_URL = '';
 
 export default function Home() {
   const [mapData, setMapData] = useState({
