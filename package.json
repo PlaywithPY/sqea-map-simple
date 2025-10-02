@@ -1,5 +1,5 @@
 {
-  "name": "sqea-map",
+  "name": "sqea-map-simple",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
